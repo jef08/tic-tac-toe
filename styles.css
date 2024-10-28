@@ -134,3 +134,15 @@ body {
     background-color: rgb(192, 42, 192);
     color: rgb(37, 42, 48);
 }
+
+.player-player-page {
+    height: 200px;
+    width: 200px;
+    background-color: beige;
+}
+
+.player-computer-page {
+    height: 200px;
+    width: 200px;
+    background-color: green;
+}
