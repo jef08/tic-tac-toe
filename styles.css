@@ -7,9 +7,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 100px;
+    gap: 50px;
 }
 
+/* Title */
 .tic-tac-toe {
     display: flex;
     justify-content: center;
@@ -25,6 +26,37 @@ body {
     color: transparent;
 }
 
+/* Start button */
+.start-bttn {
+    height: 75px;
+    width: 180px;
+    border-style: solid;
+    border-color: rgb(192, 42, 192);
+    border-radius: 5px;
+    font-size: 45px;
+    letter-spacing: 7px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(50, 57, 65);
+    color:rgb(192, 42, 192);
+    margin-top: 50px;
+}
+
+.start-bttn:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 4px 4px rgba(192, 42, 192, 0.712);
+    letter-spacing: 10px;
+    height: 80px;
+    width: 200px;
+    transition: .4s ease-in-out
+}
+
+.start-bttn:active {
+    transform: translateY(4px);
+    background-color: rgb(192, 42, 192);
+    color: rgb(37, 42, 48);
+}
+
+/* After start button - choose (player vs player) or (player vs computer) */
 .initial-container {
     height: 300px;
     width: 50%;
@@ -107,42 +139,112 @@ body {
     box-shadow: 0px 0px 4px 4px #ff2e2ead;
 }
 
-.start-bttn {
+/* The page for the Player vs Player option */
+.player-player-page {
+    height: 700px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: impact;
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: rgb(105, 105, 105);
+}
+
+.player-player-box {
+    display: grid;
+    grid-template: 150px 150px 150px / 150px 150px 150px;
+}
+
+.player-player-div {
+    background-color: rgb(46, 178, 255);
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(50, 57, 65);
+    border-radius: 4px;
+}
+
+.player-player-div:hover {
+    cursor: pointer;
+}
+
+.player-player-restart {
     height: 75px;
     width: 180px;
-    border-style: solid;
-    border-color: rgb(192, 42, 192);
-    border-radius: 5px;
-    font-size: 45px;
-    letter-spacing: 7px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
     background-color: rgb(50, 57, 65);
-    color:rgb(192, 42, 192);
+    color: rgb(105, 105, 105);
+    border: solid rgb(105, 105, 105);
+    border-radius: 5px;
+    letter-spacing: 3px;
 }
 
-.start-bttn:hover {
+.player-player-restart:hover {
     cursor: pointer;
-    box-shadow: 0px 0px 4px 4px rgba(192, 42, 192, 0.712);
-    letter-spacing: 10px;
-    height: 80px;
-    width: 200px;
-    transition: .4s ease-in-out
+    background-color: #ff2e2e;
+    border-color: #ff2e2e;
+    color: rgb(50, 57, 65);
+    box-shadow: 0px 0px 4px 4px #ff2e2e;
+    letter-spacing: 5px;
+    height: 85px;
+    width: 210px;
+    transition: .4s ease-in-out;
 }
 
-.start-bttn:active {
-    transform: translateY(4px);
-    background-color: rgb(192, 42, 192);
-    color: rgb(37, 42, 48);
-}
-
-.player-player-page {
-    height: 200px;
-    width: 200px;
-    background-color: beige;
-}
-
+/* The page for the Player vs Computer option */
 .player-computer-page {
-    height: 200px;
-    width: 200px;
-    background-color: green;
+    height: 700px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: impact;
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: rgb(105, 105, 105);
+}
+
+.player-computer-box {
+    display: grid;
+    grid-template: 150px 150px 150px / 150px 150px 150px;
+}
+
+.player-computer-div {
+    background-color: #ff2e2e;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(50, 57, 65);
+    border-radius: 4px;
+}
+
+.player-player-div:hover {
+    cursor: pointer;
+}
+
+.player-computer-restart {
+    height: 75px;
+    width: 180px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    background-color: rgb(50, 57, 65);
+    color: rgb(105, 105, 105);
+    border: solid rgb(105, 105, 105);
+    border-radius: 5px;
+    letter-spacing: 3px;
+}
+
+.player-computer-restart:hover {
+    cursor: pointer;
+    background-color: rgb(46, 178, 255);
+    border-color: rgb(46, 178, 255);
+    color: rgb(50, 57, 65);
+    box-shadow: 0px 0px 4px 4px rgb(46, 178, 255);
+    letter-spacing: 5px;
+    height: 85px;
+    width: 210px;
+    transition: .4s ease-in-out;
 }
