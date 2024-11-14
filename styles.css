@@ -164,6 +164,10 @@ body {
     border-width: 2px;
     border-color: rgb(50, 57, 65);
     border-radius: 4px;
+    color: white;
+    font-size: 60px;
+    text-shadow: 0px 2px 2px white;
+    font-weight: 600;
 }
 
 .player-player-div:hover {
@@ -219,6 +223,8 @@ body {
     border-width: 2px;
     border-color: rgb(50, 57, 65);
     border-radius: 4px;
+    color: white;
+    font-size: large;
 }
 
 .player-player-div:hover {
@@ -247,4 +253,47 @@ body {
     height: 85px;
     width: 210px;
     transition: .4s ease-in-out;
+}
+
+/* Winner announcement */
+.x-wins,
+.o-wins,
+.tie {
+    color: white;
+    font-size: 70px;
+    font-family: impact;
+    letter-spacing: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-shadow:0px 0px 2px white;
+}
+
+.play-again {
+    width: 185px;
+    height: 80px;
+    font-family: impact;
+    font-size: 30px;
+    background-color: rgb(50, 57, 65);
+    color: rgb(192, 42, 192);
+    border: solid rgb(192, 42, 192);
+    border-radius: 5px;
+    letter-spacing: 3px;
+}
+
+.play-again:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 4px 4px rgba(192, 42, 192, 0.712);
+    letter-spacing: 10px;
+    height: 90px;
+    width: 200px;
+    transition: .4s ease-in-out
+}
+
+.play-again:active {
+    transform: translateY(4px);
+    background-color: rgb(192, 42, 192);
+    color: rgb(37, 42, 48);
 }
