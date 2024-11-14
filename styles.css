@@ -297,3 +297,27 @@ body {
     background-color: rgb(192, 42, 192);
     color: rgb(37, 42, 48);
 }
+
+/*fade*/
+
+.initial-container,
+.player-player-page,
+.player-computer-page,
+.x-wins,
+.o-wins,
+.tie {
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

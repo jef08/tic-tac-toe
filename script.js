@@ -18,7 +18,7 @@ o_wins.style.display = 'none';
 tie.style.display = 'none';
 
 start_bttn.addEventListener("click", () => {
-    initial_container.style.display = "flex";
+    initial_container.style.display = 'flex';
     start_bttn.style.display = 'none';
 })
 
